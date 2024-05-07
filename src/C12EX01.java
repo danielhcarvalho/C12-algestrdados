@@ -25,7 +25,17 @@ public class C12EX01
               
         if (!numSelecionados.isEmpty())
         {
-         System.out.printf("Foram digitados %d números divisíveis por 5 e 7\n%d -- %d -- %d", numSelecionados.size(), numSelecionados.get(0), numSelecionados.get(1), numSelecionados.get(2));
+            System.out.printf("Foram digitados %d números divisíveis por 5 e 7:\n", numSelecionados.size());
+            for (int i = 0; i < numSelecionados.size(); i++) 
+            {                    
+                System.out.printf("%d", numSelecionados.get(i));
+
+                if (i < numSelecionados.size() - 1) 
+                {
+                    System.out.printf(" -- ");
+
+                }
+            }
         
         } else
         {
