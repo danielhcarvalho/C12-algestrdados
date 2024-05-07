@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-public class App 
+public class C12EX01 
 {
     public static void main(String[] args)
     {
