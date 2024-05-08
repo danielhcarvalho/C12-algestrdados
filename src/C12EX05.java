@@ -5,22 +5,19 @@ public class C12EX05
 {
     public static void main(String[] args) 
     {
-        ArrayList <String> mes = new ArrayList<>();
-        Scanner arquivoMeses;
+        String mes[] = new String[12];
 
         //objeto Scanner para ler o arquivo
-        arquivoMeses = new Scanner(C12EX05.class.getResourceAsStream("C12EX05.txt"));
+        Scanner arquivoMeses = new Scanner(C12EX05.class.getResourceAsStream("C12EX05.txt"));
 
-        //percorre o arquivo e armazena os dados na ArrayList
-        while (arquivoMeses.hasNextLine()) 
+        //percorre o arquivo e armazena os dados na array
+        for (int i = 0; i < mes.length; i++) 
         {
-            mes.add(arquivoMeses.nextLine());
-
+            mes[i] = arquivoMeses.nextLine();
         }   
-        //imprime os dados da ArrayList (do último dado até o primeiro)
-        for (int j = mes.size() - 1; j >= 0; j--) 
+        for (int j = mes.length - 1; j >= 0; j--) 
         {
-            System.out.println(mes.get(j));
+            System.out.println(mes[j]);
         }
         arquivoMeses.close();
     }
