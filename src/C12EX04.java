@@ -32,6 +32,5 @@ public class C12EX04
                 System.out.printf("%d / %d\n", vencedores01[i], vencedores01[i + 10]);
             }
         }
-
     }
 }
