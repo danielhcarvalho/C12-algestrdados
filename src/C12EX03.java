@@ -8,6 +8,7 @@ public class C12EX03
         int num[] = new int[10];
         double quadrado;
 
+        //for para receber um número
         for (int i = 0; i < num.length; i++) 
         {
             num[i] = Integer.parseInt(JOptionPane.showInputDialog(null,
@@ -16,6 +17,7 @@ public class C12EX03
             JOptionPane.QUESTION_MESSAGE));
         }
 
+        //for para imprimir o quadrado dos números da array
         for (int i = 0; i < num.length; i++) 
         {
             quadrado = Math.pow(num[i], 2);
