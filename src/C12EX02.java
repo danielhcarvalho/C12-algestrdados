@@ -40,7 +40,5 @@ public class C12EX02
         {
             System.out.println("Não foi inserido nenhum número maior que 5 e menor que 10");
         }
-
-
     }
 }
