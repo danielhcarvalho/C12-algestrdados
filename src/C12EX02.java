@@ -30,9 +30,11 @@ public class C12EX02
         {       
             System.out.print("Os números maiores que 5 e menores que 10 inseridos são: ");
             
+            //for para imprimir os números maiores que 5 e menores que 10
             for (int i = 0; i < numSelecionados.size(); i++) 
             {
                 System.out.printf("%d", numSelecionados.get(i));
+                //adiciona uma vírgula entre os números
                 if (i < numSelecionados.size() - 1) 
                 {
                     System.out.print(", ");

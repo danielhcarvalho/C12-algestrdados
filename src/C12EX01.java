@@ -6,7 +6,7 @@ public class C12EX01
     public static void main(String[] args)
     {
         int num[] = new int[10];
-        
+        //array para armazenar os números divisíveis por 5 e 7
         ArrayList<Integer> numSelecionados = new ArrayList<>();
 
         for (int i = 0; i < num.length; i++) 
@@ -16,6 +16,7 @@ public class C12EX01
             "",
             JOptionPane.QUESTION_MESSAGE));
             
+            //Verifica se o número é diferente de 0 e divisíveis por 5 e 7
             if (num[i] != 0 && num[i] % 5 == 0 && num[i] % 7 == 0) 
             {
                 numSelecionados.add(num[i]); 
@@ -23,6 +24,7 @@ public class C12EX01
             }
         }  
               
+        
         if (!numSelecionados.isEmpty())
         {
             System.out.printf("Foram digitados %d números divisíveis por 5 e 7:\n", numSelecionados.size());
