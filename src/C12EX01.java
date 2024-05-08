@@ -24,7 +24,7 @@ public class C12EX01
             }
         }  
               
-        
+        //verifica se ArrayList está vazia
         if (!numSelecionados.isEmpty())
         {
             System.out.printf("Foram digitados %d números divisíveis por 5 e 7:\n", numSelecionados.size());

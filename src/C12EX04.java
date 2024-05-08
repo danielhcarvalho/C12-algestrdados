@@ -29,7 +29,7 @@ public class C12EX04
         System.out.println();
         System.out.println("Saída de duplas: ");
 
-        //for para imprimir a orde de saida das duplas
+        //for para imprimir a ordem de saida das duplas
         for (int i = 0; i < vencedores01.length; i++) 
         {
             if (i < vencedores01.length / 2)
