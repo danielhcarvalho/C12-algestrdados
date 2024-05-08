@@ -1,36 +1,27 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class C12EX05 
 {
     public static void main(String[] args) 
     {
-        int i = 0;
+        ArrayList <String> mes = new ArrayList<>();
         Scanner arquivoMeses;
 
+        //objeto Scanner para ler o arquivo
         arquivoMeses = new Scanner(C12EX05.class.getResourceAsStream("C12EX05.txt"));
 
+        //percorre o arquivo e armazena os dados na ArrayList
         while (arquivoMeses.hasNextLine()) 
         {
-            i++;
-            arquivoMeses.nextLine();
+            mes.add(arquivoMeses.nextLine());
 
-        }        
-        arquivoMeses.close();
-
-        String mes[] = new String[i];
-
-        arquivoMeses = new Scanner(C12EX05.class.getResourceAsStream("C12EX05.txt"));
-
-        for (int j = 0; j < mes.length; j++) 
+        }   
+        //imprime os dados da ArrayList (do último dado até o primeiro)
+        for (int j = mes.size() - 1; j >= 0; j--) 
         {
-            mes[j] = arquivoMeses.nextLine();
+            System.out.println(mes.get(j));
         }
         arquivoMeses.close();
-
-        for (int j = mes.length - 1; j >= 0; j--) 
-        {
-            System.out.println(mes[j]);
-        }
-
     }
 }
