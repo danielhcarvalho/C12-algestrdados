@@ -7,7 +7,7 @@ public class C12EX02
     public static void main(String[] args) 
     {
         int num[] = new int[10];
-        //ArrayList para armazenar os números divisíveis por 5 e 7
+        //ArrayList para armazenar os números maior que 5 e menor que 10
         ArrayList<Integer> numSelecionados = new ArrayList<>();
 
         //for para preencher o array num
@@ -18,7 +18,7 @@ public class C12EX02
             "",
             JOptionPane.QUESTION_MESSAGE));
 
-            //verifica se o número é divisível por 5 e 7
+            //verifica se o número é maior que 5 e menor que 10
             if (num[i] > 5 && num[i] < 10) 
             {
                 numSelecionados.add(num[i]);

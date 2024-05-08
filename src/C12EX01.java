@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
 
 public class C12EX01 
@@ -7,6 +6,7 @@ public class C12EX01
     public static void main(String[] args)
     {
         int num[] = new int[10];
+        
         ArrayList<Integer> numSelecionados = new ArrayList<>();
 
         for (int i = 0; i < num.length; i++) 
