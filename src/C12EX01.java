@@ -28,13 +28,15 @@ public class C12EX01
         if (!numSelecionados.isEmpty())
         {
             System.out.printf("Foram digitados %d números divisíveis por 5 e 7:\n", numSelecionados.size());
+            //for para imprimir os números maiores que 5 e menores que 10
             for (int i = 0; i < numSelecionados.size(); i++) 
             {                    
-                System.out.printf("%d", numSelecionados.get(i));
+                System.out.printf(" %d", numSelecionados.get(i));
 
+                //insere uma vírgula entre os números
                 if (i < numSelecionados.size() - 1) 
                 {
-                    System.out.printf(" -- ");
+                    System.out.printf(", ");
 
                 }
             }
