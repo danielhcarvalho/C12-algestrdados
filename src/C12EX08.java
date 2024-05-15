@@ -41,8 +41,7 @@ public class C12EX08
                 {
                     divisores[qntDivisores] = numeros[i];
                     qntDivisores++;
-
-                
+     
                 }
             }
             //cria uma tabela para imprimir o resultado da soma e seus divisores presentes na array numeros
