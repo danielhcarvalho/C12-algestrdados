@@ -8,6 +8,8 @@ public class C12EX09
         double notas[] = new double[nomes.length], media = 0;
         int qntAcima = 0;
 
+        //armazena os dados informados na array nome e na array notas
+
         for (int i = 0; i < nomes.length; i++) 
         {
             nomes[i] = JOptionPane.showInputDialog(null,
@@ -18,11 +20,13 @@ public class C12EX09
             "Informe a nota do aluno:",
             "",
             JOptionPane.QUESTION_MESSAGE));
+            //soma todas as notas informadas
             media += notas[i];
 
         }
-
+        //calcula a média das notas
         media /= nomes.length;
+        //percorre a array notas e verifica quais notas estão acima da média
         for (int i = 0; i < nomes.length; i++) 
         {
             if (notas[i] > media)
@@ -34,7 +38,7 @@ public class C12EX09
         String nomesAcima[] = new String[qntAcima];
         double notasAcima[] = new double[qntAcima];
         qntAcima = 0;
-
+        //armazena os nomes e notas dos alunos que estão acima da média
         for (int i = 0; i < nomes.length; i++) 
         {
             if (notas[i] > media) 
@@ -45,6 +49,7 @@ public class C12EX09
             }
         }
 
+        //imprime os nomes e notas dos alunos acima da média
         System.out.printf("""
             ------------------------------
             |     NOME     |     NOTA    |
@@ -55,7 +60,7 @@ public class C12EX09
             System.out.printf("""
             |%14s|%13.2f|
             ------------------------------
-            """, nomesAcima[i], notasAcima[i]);
+            """, nomesAcima[i].toUpperCase(), notasAcima[i]);
         }
     }
 }
